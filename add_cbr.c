@@ -1,4 +1,3 @@
-
 #include<stdio.h>
 void get_input(int *a)
     {
