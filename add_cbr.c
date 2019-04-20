@@ -1,14 +1,14 @@
 #include<stdio.h>
-void get_input(int *x)
+void get_input(int *a)
     {
        printf("Enter a number:");
-       scanf("%d",x);
+       scanf("%d",a);
 
     }
 
-void addone(int *a,int b)
+void addone(int a,int *b)
     {
-       b= *a+1;
+       *b= a+1;
     }
 
 void output(int *a,int b)
@@ -17,9 +17,9 @@ void output(int *a,int b)
     }
 int main()
     {
-      int a,b;
+      int *a,*b;
       get_input(&a);
-      addone( &a,b);
+      addone( a,&b);
       output(  &a, b );
     }
 
