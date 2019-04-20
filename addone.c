@@ -9,7 +9,7 @@ int get_input();
 
 int add_one(int a)
 {
-    b=a+1;
+    int b=a+1;
     return b;
 }
 
