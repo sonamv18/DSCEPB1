@@ -11,9 +11,9 @@ void addone(int *a)
        *a=*a+1;
     }
 
-void output(int b , int *a)
+void output(int b , int a)
     {
-      printf("%d+1 is %d", b,*a);
+      printf("%d+1 is %d", b,a);
     }
 int main()
     {
@@ -21,6 +21,6 @@ int main()
       get_input(&a);
       b=a;
       addone(&a);
-      output(b ,&a);
+      output(b ,a);
     }
 
