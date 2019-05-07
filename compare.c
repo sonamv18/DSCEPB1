@@ -10,15 +10,10 @@ int compare(int a,int b,int c)
     }
     else if(b>c)
                 return b;
-
-    else if(c>a)
-     {
-         if(c>b)
+         else
                 return c;
 
-         else
-                return b;
-     }
+
      return a;
 }
 
@@ -30,8 +25,6 @@ int main()
     grtst=compare(a,b,c);
     printf("The largest of three given nmbers is %d",grtst);
 }
-
-
 
 
 
