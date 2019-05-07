@@ -1,4 +1,3 @@
-
 #include<stdio.h>
 int compare(int a,int b,int c)
 {
@@ -9,15 +8,10 @@ int compare(int a,int b,int c)
         else
                 return c;
     }
-    else
-    {
-                if(b>c)
+    else if(b>c)
                 return b;
-                else
-                return c;
-     }
 
-     if(c>a)
+    else if(c>a)
      {
          if(c>b)
                 return c;
@@ -36,6 +30,8 @@ int main()
     grtst=compare(a,b,c);
     printf("The largest of three given nmbers is %d",grtst);
 }
+
+
 
 
 
