@@ -4,29 +4,29 @@ int compare(int a,int b,int c)
     if(a>b)
     {
         if(a>c)
-        return a;
+                return a;
         else if(b==c)
-        return a;
+                return a;
         else
-        return c;
+                return c;
     }
     else if(b>a)
      {
          if(b>c)
-         return b;
+                return b;
          else if(a==c)
-         return b;
+                return b;
          else
-         return c;
+                return c;
      }
      else if(c>a)
      {
          if(c>b)
-         return c;
+                return c;
          else if(a==b)
-         return c;
+                return c;
          else
-         return b;
+                return b;
      }
      else if(a==b)
      {
@@ -35,9 +35,9 @@ int compare(int a,int b,int c)
           return c;
      }
      else
-     return -1;
+          return -1;
 
-
+    return -1;
 }
 
 int main()
@@ -48,6 +48,5 @@ int main()
     grtst=compare(a,b,c);
     printf("The largest of three given nmbers is %d",grtst);
 }
-
 
 
