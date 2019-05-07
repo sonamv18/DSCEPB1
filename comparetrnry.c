@@ -1,3 +1,4 @@
+#include<stdio.h>
 int input()
 {
     int a;
@@ -8,8 +9,8 @@ int input()
 
 int compare(int a ,int b, int c)
 {
-    int max,n;
-    max=(a>(n=(b>c)?b:c))?a:n;
+    int max;
+    max=(a>b)?((a>c)?a:c):((b>c)?b:c);
     return max;
 }
 
@@ -27,6 +28,7 @@ int main()
     max=compare(a,b,c);
     output(max);
 }
+
 
 
 
