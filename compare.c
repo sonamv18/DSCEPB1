@@ -1,3 +1,4 @@
+
 #include<stdio.h>
 int compare(int a,int b,int c)
 {
@@ -10,34 +11,27 @@ int compare(int a,int b,int c)
         else
                 return c;
     }
-    else if(b>a)
-     {
-         if(b>c)
+    else
+    {
+                if(b>c)
                 return b;
-         else if(a==c)
+                else if(a==c)
                 return b;
-         else
+                else
                 return c;
      }
-     else if(c>a)
+
+     if(c>a)
      {
          if(c>b)
                 return c;
          else if(a==b)
                 return c;
-         else
+
+     else
                 return b;
      }
-     else if(a==b)
-     {
-
-        if(b==c)
-          return c;
-     }
-     else
-          return -1;
-
-    return -1;
+     return a;
 }
 
 int main()
