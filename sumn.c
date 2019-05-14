@@ -1,3 +1,4 @@
+
 #include<stdio.h>
 
 int input()
@@ -8,42 +9,40 @@ int input()
         return n;
     }
 
-int inputa(a[size])
+int inputa(int a[],int N)
     {
-        int *n,i;
+        int i;
         printf("enter the elements of array");
-        for(i=0;i< n;i++)
+        for(i=0;i< N;i++)
         {
-             scanf(" %d",a[i]);
+             scanf(" %d",&a[i]);
 
         }
-
+        return -1;
     }
-int compute()
+int compute(int a[], int N)
     {
-         int i, sum==0;
-         for(i=0;i<n;i++)
+         int i, sum=0;
+         for(i=0;i<N;i++)
          {
              sum=sum+a[i];
          }
          return sum;
     }
 
-int output(a[size])
+int output(int res)
      {
-         int i;
-         for(i=0;i<&n;i++)
-         {
-               printf("%d",a[i]);
-         }
+         printf("the sum is %d",res);
+         return -1;
       }
 
 int main()
     {
-         int size=&n,a[size];
-         input(a[size]);
-         output(a[size]);
-   compute(a[size]);
+         int N=input();
+         int a[N];
+         inputa(a,N);
+         int res=compute(a,N);
+         output(res);
     }
 
 
