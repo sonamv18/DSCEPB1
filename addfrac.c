@@ -3,12 +3,12 @@
 
 float input()
     {
-         int num,denom;
+         float num,denom;
          printf("enter the numerator of the fraction");
-         scanf("%d", &num);
+         scanf("%f", &num);
          printf("enter the denominator of the fraction");
-         scanf("%d",&denom);
-         float frac=(num/denom);
+         scanf("%f",&denom);
+         float frac=num/denom;
          return frac;
     }
 
@@ -34,8 +34,5 @@ int main()
          output(sum);
          return -1;
     }
-
-
-
 
 
