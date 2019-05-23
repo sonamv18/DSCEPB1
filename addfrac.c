@@ -43,3 +43,10 @@ int main()
          int num2=input();
          int den2=input();
          int rnum= compute_n(num1,num2,den1,den2);
+         int rden=compute_d(den1,den2);
+         output(num1,num2,den1,den2,rnum,rden);
+         return -1;
+     }
+
+
+
